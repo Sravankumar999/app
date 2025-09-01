@@ -1,15 +1,24 @@
 package com.example.demo.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class DemoModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String name;
     private int age;
-    private int id;
 
     public DemoModel() {
 
     }
-    public DemoModel(String name, int age){
-        this.name =name;
+
+    public DemoModel(String name, int age) {
+        this.name = name;
         this.age = age;
     }
 
