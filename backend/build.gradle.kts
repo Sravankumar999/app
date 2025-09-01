@@ -10,7 +10,7 @@ description = "Demo project for Spring Boot"
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(24)
+		languageVersion = JavaLanguageVersion.of(17)
 	}
 }
 
@@ -20,7 +20,6 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-graphql")
-	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.graphql:spring-graphql-test")
